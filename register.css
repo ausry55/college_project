@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');/*import fonts from google fonts*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins','sans-serif';
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.5)),url(image/b2.jpg);
+    background-position: center;
+    background-size: cover;
+     position: relative;                       /*background takes positon relative */
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    position: absolute;
+    
+
+}
+.container .title, .title2{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 40px;
+    top: 38px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+.container .title2::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100px;
+    top: 38px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+/* input container */
+.container form .user-details .input-block{
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .user-details .input-block .input-box{
+    margin: 20px 0 12;
+    width: calc(100% / 2 - 20px);
+}
+form .user-details .input-block .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    border-bottom-width: 2px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.user-details .input-block .input-box input:focus,
+.user-details .input-block .input-box input:valid{
+    border-color: #a664ac;
+}
+
+.user-details .input-block .input-box .details{ /*span on input box*/
+    display: block;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+/* selction container */
+.container form .selection-details .selection-block{
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .selection-details .selection-box{
+    margin: 20px 0 12;
+    width: calc(100% / 2 - 20px);
+}
+form .selection-details .selection-block .selection-box  select{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    cursor: pointer;
+}
+option{
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    background-color: rgb(192, 223, 233);
+
+}
+.selection-details .selection-block .selection-box .details{ /*span on selection box*/
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    border-bottom-width: 2px;
+
+}
+.selection-details .selection-block .selection-box  select:focus,
+.selection-details .selection-block .selection-box  select:valid{
+    border-color: #a66fc0;
+}
+/* gender */
+form .gender-details .gender-title{
+    font-weight: 600;
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+}
+form .gender-details .gender-title::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 40px;
+    top: 38px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+form .gender-details .category{
+    display: flex;
+    width: 80%;
+    margin: 15px 20px;
+    justify-content: space-between;
+}
+.gender-details .category label{
+    display: flex;
+    align-items: center;
+}
+/* radio button */
+.gender-details .category .dot{
+    height: 18px;
+    margin-right: 8px;
+    width: 18px;
+    background:#d9d9d9;
+    border-radius: 50px;
+    border: 5px solid transparent;
+    transition: all 1s ease;
+}
+#dot-1:checked ~ .category .one,
+#dot-2:checked ~ .category .two,
+#dot-3:checked ~ .category .three{
+    border-color: #9b59b6;
+    background: #9b59b6;
+}
+form input[type="radio"]{
+    display: none;
+}
+/* register button */
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+    cursor: pointer;
+
+}
+form .button input:hover{
+
+    background: linear-gradient(-135deg,#71b7e6,#9b59b6);
+}
+

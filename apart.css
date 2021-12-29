@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');/*import fonts from google fonts*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins','sans-serif';
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.5)),url(image/b3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    cursor: pointer;
+    margin-left: 50px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    margin-right: 50px;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+/*       words in right         */
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    margin-left:5% ;
+}
+h1{
+    color: white;
+    font-size: 70px;
+    letter-spacing: 3px;
+}
+p{
+    color: white;
+    font-size: 15px;
+    line-height: 22px;
+}
+                        /* choose button*/
+button{
+    width: 150px;
+    padding: 10px;
+    color:black;
+    background:rgb(224, 180, 163);
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    border-radius:50px;
+    outline: none;
+    margin-top: 30px;
+}
+button:hover{
+    background: rgb(15, 86, 168);
+    transition: 1s;
+}
+
+                          /*that contain apt blocks*/
+.col2{
+    margin-left: 20%;
+    margin-top: 1%;
+}
+.apt{            /*apt blocks*/
+    margin-left: 50px;
+    margin-bottom: 25px;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 15px 25px;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s; /*hover attribute used with transform*/
+}
+/* apartments background images*/
+.it{
+    background-image: linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.5)),url(image/it.jpg);
+}
+.auto{
+    background-image: linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.5)),url(image/auto.jpg);
+}
+.mica{
+    background-image: linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.5)),url(image/mica.jpg);
+}
+.energy{
+    background-image: linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.5)),url(image/energy.jpg);
+}
+.apt:hover{             /*apt blocks hover*/  
+    transform: translateY(-10px);       
+}
+                  /*words on blocks*/
+h5{
+    color: white;
+    margin: auto;
+    text-shadow: 0 0 15px black;
+    font-size: 15px;    
+}
+/*------------------learn more button---------------------*/
+.learn_btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 3px 15px;
+    font-size: 15px;
+    /*background:transparent;*/
+    margin-top: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+.learn_btn:hover{
+    background: rgb(15, 86, 168);;
+    border: 1px solid rgb(15, 86, 168);
+    transition: 1s;
+}
+
+
+
